@@ -4,7 +4,7 @@ import json
 import variables
 
 ROOT_PATH_DIR = os.path.dirname(os.getcwd())
-AICORE_CONFIG_FILENAME = 'tutorial-system-agent/tutorial-ai-agent/.aicore-config.json'
+AICORE_CONFIG_FILENAME = ROOT_PATH_DIR+'/tutorial-system-agent/tutorial-ai-agent/.aicore-config.json'
 
 def set_environment_variables() -> None:
     with open(os.path.join(ROOT_PATH_DIR, AICORE_CONFIG_FILENAME), 'r') as config_file:

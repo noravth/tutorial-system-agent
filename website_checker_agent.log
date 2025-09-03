@@ -1,0 +1,247 @@
+2025-08-08 11:19:21,371 - __main__ - INFO - Starting main execution
+2025-08-08 11:19:21,373 - __main__ - INFO - Starting website checker agent
+2025-08-08 11:19:23,787 - __main__ - INFO - Created async playwright browser
+2025-08-08 11:19:24,117 - __main__ - INFO - Initialized 8 tools for the agent
+2025-08-08 11:19:24,171 - __main__ - INFO - Created react agent chain
+2025-08-08 11:19:24,171 - __main__ - INFO - Processing tutorial with 26 words
+2025-08-08 11:19:24,171 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-08-08 11:19:24,204 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-08-08 11:20:09,979 - __main__ - INFO - Agent execution completed
+2025-08-08 11:20:09,980 - __main__ - INFO - Processing agent output for serialization
+2025-08-08 11:20:09,980 - __main__ - INFO - Serialized 18 messages
+2025-08-08 11:20:09,981 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-08-08 11:20:09,993 - __main__ - INFO - Output saved successfully
+2025-08-08 11:20:10,008 - __main__ - INFO - Website checker agent completed successfully
+2025-08-08 11:22:26,030 - __main__ - INFO - Starting main execution
+2025-08-08 11:22:26,031 - __main__ - INFO - Starting website checker agent
+2025-08-08 11:22:26,517 - __main__ - INFO - Created async playwright browser
+2025-08-08 11:22:26,720 - __main__ - INFO - Initialized 8 tools for the agent
+2025-08-08 11:22:26,748 - __main__ - INFO - Created react agent chain
+2025-08-08 11:22:26,748 - __main__ - INFO - Processing tutorial with 26 words
+2025-08-08 11:22:26,748 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-08-08 11:22:26,756 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-08-08 11:22:56,846 - __main__ - INFO - Agent execution completed
+2025-08-08 11:22:56,846 - __main__ - INFO - Processing agent output for serialization
+2025-08-08 11:22:56,846 - __main__ - INFO - Serialized 20 messages
+2025-08-08 11:22:56,846 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-08-08 11:22:56,849 - __main__ - INFO - Output saved successfully
+2025-08-08 11:22:56,855 - __main__ - INFO - Website checker agent completed successfully
+2025-08-08 11:26:22,007 - __main__ - INFO - Starting main execution
+2025-08-08 11:26:22,008 - __main__ - INFO - Starting website checker agent
+2025-08-08 11:26:22,731 - __main__ - INFO - Created async playwright browser
+2025-08-08 11:26:23,053 - __main__ - INFO - Initialized 8 tools for the agent
+2025-08-08 11:26:23,102 - __main__ - INFO - Created react agent chain
+2025-08-08 11:26:23,102 - __main__ - INFO - Processing tutorial with 17 words
+2025-08-08 11:26:23,102 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-08-08 11:26:23,127 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-08-08 11:27:05,980 - langchain_google_vertexai.chat_models - WARNING - This model can reply with multiple function calls in one response. Please don't rely on `additional_kwargs.function_call` as only the last one will be saved.Use `tool_calls` instead.
+2025-08-08 11:27:05,980 - langchain_google_vertexai.chat_models - WARNING - This model can reply with multiple function calls in one response. Please don't rely on `additional_kwargs.function_call` as only the last one will be saved.Use `tool_calls` instead.
+2025-08-08 11:27:11,006 - __main__ - INFO - Agent execution completed
+2025-08-08 11:27:11,006 - __main__ - INFO - Processing agent output for serialization
+2025-08-08 11:27:11,007 - __main__ - INFO - Serialized 14 messages
+2025-08-08 11:27:11,007 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-08-08 11:27:11,018 - __main__ - INFO - Output saved successfully
+2025-08-08 11:27:11,018 - __main__ - INFO - Website checker agent completed successfully
+2025-08-11 10:21:26,104 - __main__ - INFO - Starting main execution
+2025-08-11 10:21:26,105 - __main__ - INFO - Starting website checker agent
+2025-08-11 10:21:28,541 - __main__ - INFO - Created async playwright browser
+2025-08-11 10:21:28,827 - __main__ - INFO - Initialized 8 tools for the agent
+2025-08-11 10:21:28,878 - __main__ - INFO - Created react agent chain
+2025-08-11 10:21:28,878 - __main__ - INFO - Processing tutorial with 17 words
+2025-08-11 10:21:28,878 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-08-11 10:21:28,896 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-08-11 10:22:09,633 - __main__ - INFO - Starting main execution
+2025-08-11 10:22:09,634 - __main__ - INFO - Starting website checker agent
+2025-08-11 10:22:10,123 - __main__ - INFO - Created async playwright browser
+2025-08-11 10:22:10,307 - __main__ - INFO - Initialized 8 tools for the agent
+2025-08-11 10:22:10,334 - __main__ - INFO - Created react agent chain
+2025-08-11 10:22:10,335 - __main__ - INFO - Processing tutorial with 26 words
+2025-08-11 10:22:10,335 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-08-11 10:22:10,343 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-08-11 10:22:28,465 - __main__ - INFO - Agent execution completed
+2025-08-11 10:22:28,465 - __main__ - INFO - Processing agent output for serialization
+2025-08-11 10:22:28,465 - __main__ - INFO - Serialized 10 messages
+2025-08-11 10:22:28,465 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-08-11 10:22:28,477 - __main__ - INFO - Output saved successfully
+2025-08-11 10:22:28,477 - __main__ - INFO - Website checker agent completed successfully
+2025-09-01 15:57:22,057 - __main__ - INFO - Starting main execution
+2025-09-01 15:57:22,058 - __main__ - INFO - Starting website checker agent
+2025-09-01 15:57:22,059 - __main__ - ERROR - Error during execution: No module named 'playwright'
+2025-09-01 15:57:51,912 - __main__ - INFO - Starting main execution
+2025-09-01 15:57:51,912 - __main__ - INFO - Starting website checker agent
+2025-09-01 15:57:54,671 - __main__ - ERROR - Error during execution: BrowserType.launch: Executable doesn't exist at /Users/d070387/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-09-01 15:58:53,907 - __main__ - INFO - Starting main execution
+2025-09-01 15:58:53,907 - __main__ - INFO - Starting website checker agent
+2025-09-01 15:58:54,088 - __main__ - ERROR - Error during execution: BrowserType.launch: Executable doesn't exist at /Users/d070387/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-09-01 16:42:10,728 - __main__ - INFO - Starting main execution
+2025-09-01 16:42:10,729 - __main__ - INFO - Starting website checker agent
+2025-09-01 16:42:27,547 - __main__ - INFO - Created async playwright browser
+2025-09-01 16:42:27,550 - __main__ - ERROR - Error during execution: The 'beautifulsoup4' package is required to use this tool. Please install it with 'pip install beautifulsoup4'.
+2025-09-01 17:09:37,998 - __main__ - INFO - Starting main execution
+2025-09-01 17:09:37,999 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:09:40,021 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:09:40,114 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:09:40,133 - __main__ - INFO - Created react agent chain
+2025-09-01 17:09:40,133 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:09:40,133 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:09:40,146 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-01 17:09:40,245 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/dd08cb7ba50bdce2/models/gemini-1.5-pro:generateContent.
+2025-09-01 17:09:40,683 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x133a15550>
+2025-09-01 17:09:56,140 - __main__ - INFO - Starting main execution
+2025-09-01 17:09:56,140 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:09:56,409 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:09:56,443 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:09:56,451 - __main__ - INFO - Created react agent chain
+2025-09-01 17:09:56,451 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:09:56,451 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:09:56,456 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-01 17:09:56,556 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/dd08cb7ba50bdce2/models/gemini-1.5-pro:generateContent.
+2025-09-01 17:09:56,816 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x15b1f5550>
+2025-09-01 17:10:09,286 - __main__ - INFO - Starting main execution
+2025-09-01 17:10:09,287 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:10:09,554 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:10:09,601 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:10:09,609 - __main__ - INFO - Created react agent chain
+2025-09-01 17:10:09,609 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:10:09,609 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:10:09,613 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-01 17:10:09,734 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/dd08cb7ba50bdce2/models/gemini-1.5-pro:generateContent.
+2025-09-01 17:10:09,981 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x11e015550>
+2025-09-01 17:14:16,014 - __main__ - INFO - Starting main execution
+2025-09-01 17:14:16,014 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:14:16,270 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:14:16,304 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:14:16,313 - __main__ - INFO - Created react agent chain
+2025-09-01 17:14:16,313 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:14:16,313 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:14:19,395 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:14:19,408 - __main__ - INFO - Agent execution completed
+2025-09-01 17:14:19,408 - __main__ - INFO - Processing agent output for serialization
+2025-09-01 17:14:19,408 - __main__ - INFO - Serialized 2 messages
+2025-09-01 17:14:19,409 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-01 17:14:19,418 - __main__ - INFO - Output saved successfully
+2025-09-01 17:14:19,419 - __main__ - INFO - Website checker agent completed successfully
+2025-09-01 17:19:02,647 - __main__ - INFO - Starting main execution
+2025-09-01 17:19:02,647 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:19:03,028 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:19:03,089 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:19:03,106 - __main__ - INFO - Created react agent chain
+2025-09-01 17:19:03,106 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:19:03,106 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:19:05,928 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:19:05,945 - __main__ - INFO - Agent execution completed
+2025-09-01 17:19:05,945 - __main__ - INFO - Processing agent output for serialization
+2025-09-01 17:19:05,946 - __main__ - INFO - Serialized 2 messages
+2025-09-01 17:19:05,946 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-01 17:19:05,955 - __main__ - INFO - Output saved successfully
+2025-09-01 17:19:05,956 - __main__ - INFO - Website checker agent completed successfully
+2025-09-01 17:19:45,118 - __main__ - INFO - Starting main execution
+2025-09-01 17:19:45,118 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:19:45,382 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:19:45,419 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:19:45,427 - __main__ - INFO - Created react agent chain
+2025-09-01 17:19:45,427 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:19:45,427 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:19:45,432 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-01 17:19:45,536 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/dd08cb7ba50bdce2/models/gemini-1.5-pro:generateContent.
+2025-09-01 17:19:46,012 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x114411550>
+2025-09-01 17:48:40,109 - __main__ - INFO - Starting main execution
+2025-09-01 17:48:40,109 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:48:42,019 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:48:42,113 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:48:42,130 - __main__ - INFO - Created react agent chain
+2025-09-01 17:48:42,130 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:48:42,130 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:48:44,700 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:48:44,718 - __main__ - INFO - Agent execution completed
+2025-09-01 17:48:44,718 - __main__ - INFO - Processing agent output for serialization
+2025-09-01 17:48:44,718 - __main__ - INFO - Serialized 2 messages
+2025-09-01 17:48:44,718 - __main__ - INFO - Saving output to /Users/d070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-01 17:48:44,719 - __main__ - INFO - Output saved successfully
+2025-09-01 17:48:44,720 - __main__ - INFO - Website checker agent completed successfully
+2025-09-01 17:50:25,066 - __main__ - INFO - Starting main execution
+2025-09-01 17:50:25,066 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:50:25,420 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:50:25,460 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:50:25,470 - __main__ - INFO - Created react agent chain
+2025-09-01 17:50:25,470 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:50:25,470 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:50:29,841 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:31,915 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:34,233 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:34,902 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:38,781 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:41,671 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:43,584 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:47,509 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:48,630 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:49,510 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:50:55,307 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:51:01,511 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:51:04,123 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:51:04,129 - __main__ - ERROR - Error during execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-01 17:51:16,634 - __main__ - INFO - Starting main execution
+2025-09-01 17:51:16,635 - __main__ - INFO - Starting website checker agent
+2025-09-01 17:51:16,886 - __main__ - INFO - Created async playwright browser
+2025-09-01 17:51:16,921 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-01 17:51:16,930 - __main__ - INFO - Created react agent chain
+2025-09-01 17:51:16,930 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-01 17:51:16,931 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-01 17:51:20,646 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:51:22,483 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:51:24,441 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-01 17:51:25,169 - httpx - INFO - HTTP Request: POST https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d0043b0b96eca37e/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-09-02 14:08:35,202 - __main__ - INFO - Starting main execution
+2025-09-02 14:08:35,203 - __main__ - INFO - Starting website checker agent
+2025-09-02 14:08:37,342 - __main__ - INFO - Created async playwright browser
+2025-09-02 14:08:37,485 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-02 14:08:37,507 - __main__ - INFO - Created react agent chain
+2025-09-02 14:08:37,507 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-02 14:08:37,507 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-02 14:08:37,521 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-02 14:08:37,622 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d00e7f101d1b6e22/models/gemini-2.5-pro:generateContent.
+2025-09-02 14:08:37,954 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x169ff5550>
+2025-09-02 14:09:05,497 - __main__ - INFO - Starting main execution
+2025-09-02 14:09:05,497 - __main__ - INFO - Starting website checker agent
+2025-09-02 14:09:05,765 - __main__ - INFO - Created async playwright browser
+2025-09-02 14:09:05,803 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-02 14:09:05,810 - __main__ - INFO - Created react agent chain
+2025-09-02 14:09:05,811 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-02 14:09:05,811 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-02 14:09:05,816 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-02 14:09:05,914 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d00e7f101d1b6e22/models/gemini-2.5-pro:generateContent.
+2025-09-02 14:09:06,161 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x139715550>

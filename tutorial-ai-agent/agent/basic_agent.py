@@ -47,13 +47,19 @@ def check_urls(state: State):
         try:
             response = requests.head(url, timeout=5, allow_redirects=True)
             status = response.status_code
-            if status >= 400:
-                report.append(f"{url}: Broken (HTTP {status})")
+            if status == 403:
+                report.append(f"{url}: Authorization missing (HTTP {status})")
+            elif status >= 400:
+                report.append(f"{url}: Error (HTTP {status})")
             else:
                 report.append(f"{url}: OK (HTTP {status})")
         except Exception as e:
             report.append(f"{url}: Error ({e})")
     return {"url_report": report}
+
+def get_product_context(product_name):
+    result = None # add information from call_grounding_api.py here
+    return result
 
 # Add nodes to the graph
 graph_builder.add_node("analyze_quality", analyze_quality)

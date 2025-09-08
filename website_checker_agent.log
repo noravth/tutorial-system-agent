@@ -245,3 +245,409 @@ Falling back to grpc since no async rest credentials were detected.
 2025-09-02 14:09:05,914 - __main__ - ERROR - Error during execution: Failed to send request to https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d00e7f101d1b6e22/models/gemini-2.5-pro:generateContent.
 2025-09-02 14:09:06,161 - asyncio - ERROR - Unclosed client session
 client_session: <aiohttp.client.ClientSession object at 0x139715550>
+2025-09-03 12:53:34,640 - langchain_google_vertexai.chat_models - WARNING - Unexpected argument 'genaihub_client' provided to ChatVertexAI.
+2025-09-03 12:53:34,650 - __main__ - INFO - Starting main execution
+2025-09-03 12:53:34,650 - __main__ - INFO - Starting website checker agent
+2025-09-03 12:53:34,650 - __main__ - ERROR - Error during execution: No module named 'playwright'
+2025-09-03 12:54:16,858 - langchain_google_vertexai.chat_models - WARNING - Unexpected argument 'genaihub_client' provided to ChatVertexAI.
+2025-09-03 12:54:16,863 - __main__ - INFO - Starting main execution
+2025-09-03 12:54:16,864 - __main__ - INFO - Starting website checker agent
+2025-09-03 12:54:16,864 - __main__ - ERROR - Error during execution: No module named 'playwright'
+2025-09-03 13:03:44,179 - langchain_google_vertexai.chat_models - WARNING - Unexpected argument 'genaihub_client' provided to ChatVertexAI.
+2025-09-03 13:03:44,222 - __main__ - INFO - Starting main execution
+2025-09-03 13:03:44,223 - __main__ - INFO - Starting website checker agent
+2025-09-03 13:03:45,543 - __main__ - INFO - Created async playwright browser
+2025-09-03 13:03:45,549 - __main__ - ERROR - Error during execution: The 'beautifulsoup4' package is required to use this tool. Please install it with 'pip install beautifulsoup4'.
+2025-09-03 13:31:49,779 - langchain_google_vertexai.chat_models - WARNING - Unexpected argument 'genaihub_client' provided to ChatVertexAI.
+2025-09-03 13:31:49,821 - __main__ - INFO - Starting main execution
+2025-09-03 13:31:49,822 - __main__ - INFO - Starting website checker agent
+2025-09-03 13:31:52,107 - __main__ - INFO - Created async playwright browser
+2025-09-03 13:31:52,173 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-03 13:31:52,211 - __main__ - INFO - Created react agent chain
+2025-09-03 13:31:52,211 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-03 13:31:52,211 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-03 13:31:52,223 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-03 13:31:55,493 - __main__ - ERROR - Error during execution: Failed to parse candidates field: Failed to parse content field: Failed to parse parts field: Message type "google.cloud.aiplatform.v1.Part" should not have multiple "data" oneof fields at "GenerateContentResponse.candidates[0].content.parts[0]"....
+2025-09-03 14:21:02,321 - langchain_google_vertexai.chat_models - WARNING - Unexpected argument 'genaihub_client' provided to ChatVertexAI.
+2025-09-03 14:21:02,369 - __main__ - INFO - Starting main execution
+2025-09-03 14:21:02,370 - __main__ - INFO - Starting website checker agent
+2025-09-03 14:21:04,360 - __main__ - INFO - Created async playwright browser
+2025-09-03 14:21:04,477 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-03 14:21:04,495 - __main__ - INFO - Created react agent chain
+2025-09-03 14:21:04,495 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-03 14:21:04,495 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-03 14:21:04,506 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-03 14:21:07,756 - __main__ - INFO - Agent execution completed
+2025-09-03 14:21:07,756 - __main__ - INFO - Processing agent output for serialization
+2025-09-03 14:21:07,756 - __main__ - INFO - Serialized 2 messages
+2025-09-03 14:21:07,758 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-03 14:21:07,759 - __main__ - INFO - Output saved successfully
+2025-09-03 14:21:07,759 - __main__ - INFO - Website checker agent completed successfully
+2025-09-03 14:22:25,358 - langchain_google_vertexai.chat_models - WARNING - Unexpected argument 'genaihub_client' provided to ChatVertexAI.
+2025-09-03 14:22:25,362 - __main__ - INFO - Starting main execution
+2025-09-03 14:22:25,362 - __main__ - INFO - Starting website checker agent
+2025-09-03 14:22:25,627 - __main__ - INFO - Created async playwright browser
+2025-09-03 14:22:25,664 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-03 14:22:25,673 - __main__ - INFO - Created react agent chain
+2025-09-03 14:22:25,673 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-03 14:22:25,673 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-03 14:22:25,678 - root - WARNING - REST async clients requires async credentials set using aiplatform.initializer._set_async_rest_credentials().
+Falling back to grpc since no async rest credentials were detected.
+2025-09-03 14:22:28,593 - __main__ - INFO - Agent execution completed
+2025-09-03 14:22:28,593 - __main__ - INFO - Processing agent output for serialization
+2025-09-03 14:22:28,593 - __main__ - INFO - Serialized 2 messages
+2025-09-03 14:22:28,593 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-03 14:22:28,594 - __main__ - INFO - Output saved successfully
+2025-09-03 14:22:28,594 - __main__ - INFO - Website checker agent completed successfully
+2025-09-03 14:41:54,242 - __main__ - INFO - Starting main execution
+2025-09-03 14:41:54,242 - __main__ - INFO - Starting website checker agent
+2025-09-03 14:41:56,084 - __main__ - INFO - Created async playwright browser
+2025-09-03 14:41:56,182 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-03 14:41:56,204 - __main__ - INFO - Created react agent chain
+2025-09-03 14:41:56,204 - __main__ - INFO - Processing tutorial with 26 words
+2025-09-03 14:41:56,204 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-03 14:41:56,216 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:01,805 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:05,011 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:06,906 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:08,544 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:10,541 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:19,238 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:21,260 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:24,164 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:26,714 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:32,434 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:36,327 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:38,972 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:42:42,401 - __main__ - ERROR - Error during execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-03 14:45:07,554 - __main__ - INFO - Starting main execution
+2025-09-03 14:45:07,554 - __main__ - INFO - Starting website checker agent
+2025-09-03 14:45:07,834 - __main__ - INFO - Created async playwright browser
+2025-09-03 14:45:07,879 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-03 14:45:07,893 - __main__ - INFO - Created react agent chain
+2025-09-03 14:45:07,893 - __main__ - INFO - Processing tutorial with 13 words
+2025-09-03 14:45:07,893 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-03 14:45:07,899 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:45:12,436 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:45:15,844 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:45:18,107 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:45:20,500 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:45:22,976 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-03 14:45:26,311 - __main__ - INFO - Agent execution completed
+2025-09-03 14:45:26,312 - __main__ - INFO - Processing agent output for serialization
+2025-09-03 14:45:26,312 - __main__ - INFO - Serialized 12 messages
+2025-09-03 14:45:26,312 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-03 14:45:26,324 - __main__ - INFO - Output saved successfully
+2025-09-03 14:45:26,325 - __main__ - INFO - Website checker agent completed successfully
+2025-09-04 13:53:07,048 - __main__ - INFO - Starting main execution
+2025-09-04 13:53:07,049 - __main__ - INFO - Starting website checker agent
+2025-09-04 13:53:10,150 - __main__ - INFO - Created async playwright browser
+2025-09-04 13:53:10,240 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-04 13:53:10,337 - __main__ - INFO - Created react agent chain
+2025-09-04 13:53:10,337 - __main__ - INFO - Processing tutorial with 27 words
+2025-09-04 13:53:10,337 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-04 13:53:10,360 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:14,802 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:17,373 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:19,175 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:20,874 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:24,304 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:27,350 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:29,936 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:33,285 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:42,888 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:46,273 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:48,151 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:53:50,744 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:54:00,904 - __main__ - ERROR - Error during execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-09-04 13:56:12,909 - __main__ - INFO - Starting main execution
+2025-09-04 13:56:12,909 - __main__ - INFO - Starting website checker agent
+2025-09-04 13:56:13,160 - __main__ - INFO - Created async playwright browser
+2025-09-04 13:56:13,200 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-04 13:56:13,213 - __main__ - INFO - Created react agent chain
+2025-09-04 13:56:13,213 - __main__ - INFO - Processing tutorial with 27 words
+2025-09-04 13:56:13,213 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-04 13:56:13,218 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:17,566 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:20,515 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:22,200 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:23,781 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:27,237 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:30,240 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:32,703 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:41,697 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:45,462 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:47,181 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:49,818 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:53,238 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:55,201 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:56:57,834 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 13:57:09,121 - __main__ - INFO - Agent execution completed
+2025-09-04 13:57:09,122 - __main__ - INFO - Processing agent output for serialization
+2025-09-04 13:57:09,122 - __main__ - INFO - Serialized 30 messages
+2025-09-04 13:57:09,122 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-04 13:57:09,136 - __main__ - INFO - Output saved successfully
+2025-09-04 13:57:09,137 - __main__ - INFO - Website checker agent completed successfully
+2025-09-04 15:14:38,538 - __main__ - INFO - Starting main execution
+2025-09-04 15:14:38,538 - __main__ - INFO - Starting website checker agent
+2025-09-04 15:14:40,684 - __main__ - INFO - Created async playwright browser
+2025-09-04 15:14:40,787 - __main__ - ERROR - Error during execution: BashProcess has been moved to langchain experimental.To use this tool, install langchain-experimental with `pip install langchain-experimental`.
+2025-09-04 15:15:08,650 - __main__ - INFO - Starting main execution
+2025-09-04 15:15:08,651 - __main__ - INFO - Starting website checker agent
+2025-09-04 15:15:08,893 - __main__ - INFO - Created async playwright browser
+2025-09-04 15:15:08,939 - __main__ - INFO - Initialized 8 tools for the agent
+2025-09-04 15:15:08,966 - __main__ - INFO - Created react agent chain
+2025-09-04 15:15:08,966 - __main__ - INFO - Processing tutorial with 13 words
+2025-09-04 15:15:08,966 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-04 15:15:08,983 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:15:13,982 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:15:17,441 - __main__ - INFO - Agent execution completed
+2025-09-04 15:15:17,442 - __main__ - INFO - Processing agent output for serialization
+2025-09-04 15:15:17,442 - __main__ - INFO - Serialized 4 messages
+2025-09-04 15:15:17,442 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-04 15:15:17,455 - __main__ - INFO - Output saved successfully
+2025-09-04 15:15:17,455 - __main__ - INFO - Website checker agent completed successfully
+2025-09-04 15:23:05,423 - __main__ - INFO - Starting main execution
+2025-09-04 15:23:05,423 - __main__ - INFO - Starting website checker agent
+2025-09-04 15:23:08,130 - __main__ - INFO - Created async playwright browser
+2025-09-04 15:23:08,212 - __main__ - INFO - Initialized 8 tools for the agent
+2025-09-04 15:23:08,234 - __main__ - INFO - Created react agent chain
+2025-09-04 15:23:08,234 - __main__ - INFO - Processing tutorial with 27 words
+2025-09-04 15:23:08,235 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-04 15:23:08,246 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:14,076 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:17,053 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:18,591 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:20,446 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:22,002 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:25,398 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:29,202 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:32,372 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:41,649 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:44,390 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:46,955 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:48,872 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:51,071 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:53,668 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:56,851 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:23:59,550 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:01,949 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:06,760 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:11,039 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:12,713 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:15,685 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:17,209 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:24:26,923 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:27:56,018 - __main__ - INFO - Starting main execution
+2025-09-04 15:27:56,019 - __main__ - INFO - Starting website checker agent
+2025-09-04 15:27:56,660 - __main__ - INFO - Created async playwright browser
+2025-09-04 15:27:57,134 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-04 15:27:57,151 - __main__ - INFO - Created react agent chain
+2025-09-04 15:27:57,151 - __main__ - INFO - Processing tutorial with 19 words
+2025-09-04 15:27:57,151 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-04 15:27:57,160 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:16,113 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:18,360 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:21,575 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:25,103 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:29,726 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:33,498 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:36,326 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:40,749 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:44,125 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:46,245 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:28:54,612 - __main__ - INFO - Agent execution completed
+2025-09-04 15:28:54,612 - __main__ - INFO - Processing agent output for serialization
+2025-09-04 15:28:54,612 - __main__ - INFO - Serialized 22 messages
+2025-09-04 15:28:54,613 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-04 15:28:54,623 - __main__ - INFO - Output saved successfully
+2025-09-04 15:28:54,625 - __main__ - INFO - Website checker agent completed successfully
+2025-09-04 15:34:48,383 - __main__ - INFO - Starting main execution
+2025-09-04 15:34:48,383 - __main__ - INFO - Starting website checker agent
+2025-09-04 15:34:50,856 - __main__ - INFO - Created async playwright browser
+2025-09-04 15:34:50,953 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-04 15:34:50,963 - __main__ - INFO - Created react agent chain
+2025-09-04 15:34:50,963 - __main__ - INFO - Processing tutorial with 19 words
+2025-09-04 15:34:50,963 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-04 15:34:50,969 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:00,079 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:02,285 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:04,779 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:07,217 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:09,604 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:15,668 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:19,353 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:23,756 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:26,274 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:30,219 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:34,185 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:37,545 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:41,207 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-04 15:35:59,095 - __main__ - INFO - Agent execution completed
+2025-09-04 15:35:59,095 - __main__ - INFO - Processing agent output for serialization
+2025-09-04 15:35:59,096 - __main__ - INFO - Serialized 28 messages
+2025-09-04 15:35:59,096 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-04 15:35:59,114 - __main__ - INFO - Output saved successfully
+2025-09-04 15:35:59,116 - __main__ - INFO - Website checker agent completed successfully
+2025-09-05 13:31:42,919 - __main__ - INFO - Starting main execution
+2025-09-05 13:31:42,920 - __main__ - INFO - Starting website checker agent
+2025-09-05 13:31:45,632 - __main__ - INFO - Created async playwright browser
+2025-09-05 13:31:45,881 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-05 13:31:45,906 - __main__ - INFO - Created react agent chain
+2025-09-05 13:31:45,906 - __main__ - INFO - Processing tutorial with 27 words
+2025-09-05 13:31:45,906 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-05 13:31:45,922 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:31:51,222 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:31:54,322 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:31:56,147 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:00,150 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:03,257 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:05,499 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:12,765 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:15,612 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:19,650 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:21,987 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 13:32:27,822 - __main__ - INFO - Agent execution completed
+2025-09-05 13:32:27,822 - __main__ - INFO - Processing agent output for serialization
+2025-09-05 13:32:27,823 - __main__ - INFO - Serialized 22 messages
+2025-09-05 13:32:27,823 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-05 13:32:27,828 - __main__ - INFO - Output saved successfully
+2025-09-05 13:32:27,831 - __main__ - INFO - Website checker agent completed successfully
+2025-09-05 14:58:49,221 - __main__ - INFO - Starting main execution
+2025-09-05 14:58:49,222 - __main__ - INFO - Starting website checker agent
+2025-09-05 14:58:52,238 - __main__ - INFO - Created async playwright browser
+2025-09-05 14:58:52,500 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-05 14:58:52,525 - __main__ - INFO - Created react agent chain
+2025-09-05 14:58:52,525 - __main__ - INFO - Processing tutorial with 27 words
+2025-09-05 14:58:52,525 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-05 14:58:52,542 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:58:58,576 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:59:01,307 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:59:06,214 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:59:09,135 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:59:13,649 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:59:16,139 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-05 14:59:21,993 - __main__ - INFO - Agent execution completed
+2025-09-05 14:59:21,993 - __main__ - INFO - Processing agent output for serialization
+2025-09-05 14:59:21,993 - __main__ - INFO - Serialized 14 messages
+2025-09-05 14:59:21,994 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-05 14:59:22,008 - __main__ - INFO - Output saved successfully
+2025-09-05 14:59:22,010 - __main__ - INFO - Website checker agent completed successfully
+2025-09-08 09:26:01,539 - __main__ - INFO - Starting main execution
+2025-09-08 09:26:01,540 - __main__ - INFO - Starting website checker agent
+2025-09-08 09:26:04,155 - __main__ - INFO - Created async playwright browser
+2025-09-08 09:26:04,397 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-08 09:26:04,410 - __main__ - INFO - Created react agent chain
+2025-09-08 09:26:04,410 - __main__ - INFO - Processing tutorial with 256 words
+2025-09-08 09:26:04,410 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-08 09:26:04,426 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:17,659 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:19,869 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:22,766 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:25,868 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:31,252 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:40,122 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:43,301 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:47,694 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:53,888 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:26:58,580 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:03,126 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:07,717 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:11,347 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:16,600 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:22,381 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:26,976 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:30,017 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:34,342 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:39,012 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:42,903 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:45,521 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:49,373 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:53,277 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:27:57,817 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:28:01,672 - __main__ - INFO - Agent execution completed
+2025-09-08 09:28:01,672 - __main__ - INFO - Processing agent output for serialization
+2025-09-08 09:28:01,673 - __main__ - INFO - Serialized 50 messages
+2025-09-08 09:28:01,673 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-08 09:28:01,687 - __main__ - INFO - Output saved successfully
+2025-09-08 09:28:01,711 - __main__ - INFO - Website checker agent completed successfully
+2025-09-08 09:29:55,441 - __main__ - INFO - Starting main execution
+2025-09-08 09:29:55,441 - __main__ - INFO - Starting website checker agent
+2025-09-08 09:29:56,131 - __main__ - INFO - Created async playwright browser
+2025-09-08 09:29:56,222 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-08 09:29:56,232 - __main__ - INFO - Created react agent chain
+2025-09-08 09:29:56,232 - __main__ - INFO - Processing tutorial with 256 words
+2025-09-08 09:29:56,232 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-08 09:29:56,247 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:06,155 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:07,994 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:10,345 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:12,793 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:15,178 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:16,676 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:19,269 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:22,745 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:25,848 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:28,119 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:31,313 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:34,131 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:36,116 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:42,606 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:44,809 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:48,206 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:51,402 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:53,971 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:56,263 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:57,609 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:30:59,838 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:31:03,258 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:31:06,945 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:31:10,532 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:31:12,488 - __main__ - INFO - Agent execution completed
+2025-09-08 09:31:12,488 - __main__ - INFO - Processing agent output for serialization
+2025-09-08 09:31:12,488 - __main__ - INFO - Serialized 50 messages
+2025-09-08 09:31:12,489 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-08 09:31:12,513 - __main__ - INFO - Output saved successfully
+2025-09-08 09:31:12,515 - __main__ - INFO - Website checker agent completed successfully
+2025-09-08 09:36:34,414 - __main__ - INFO - Starting main execution
+2025-09-08 09:36:34,414 - __main__ - INFO - Starting website checker agent
+2025-09-08 09:36:35,215 - __main__ - INFO - Created async playwright browser
+2025-09-08 09:36:35,378 - __main__ - INFO - Initialized 7 tools for the agent
+2025-09-08 09:36:35,395 - __main__ - INFO - Created react agent chain
+2025-09-08 09:36:35,395 - __main__ - INFO - Processing tutorial with 256 words
+2025-09-08 09:36:35,395 - __main__ - INFO - Invoking agent with tutorial instructions
+2025-09-08 09:36:35,406 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:36:47,855 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:36:49,526 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:36:53,108 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:36:54,916 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:01,978 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:07,188 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:10,839 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:14,158 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:22,072 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:26,551 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:30,982 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:35,175 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:38,951 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:42,823 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:46,563 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:50,973 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:54,980 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:37:59,883 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:04,206 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:10,169 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:16,238 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:21,654 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:29,000 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:33,630 - langchain_aws.chat_models.bedrock_converse - INFO - Using Bedrock Converse API to generate response
+2025-09-08 09:38:37,437 - __main__ - INFO - Agent execution completed
+2025-09-08 09:38:37,437 - __main__ - INFO - Processing agent output for serialization
+2025-09-08 09:38:37,437 - __main__ - INFO - Serialized 50 messages
+2025-09-08 09:38:37,437 - __main__ - INFO - Saving output to /Users/D070387/tutorial-system-agent/tutorial-ai-agent/agent/../data/output/output_formatted.json
+2025-09-08 09:38:37,450 - __main__ - INFO - Output saved successfully
+2025-09-08 09:38:37,477 - __main__ - INFO - Website checker agent completed successfully

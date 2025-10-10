@@ -2,7 +2,6 @@ import os
 import json
 import logging
 
-import variables
 import genaihub_client
 genaihub_client.set_environment_variables()
 

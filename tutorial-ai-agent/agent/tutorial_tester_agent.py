@@ -65,6 +65,7 @@ async def main():
     logger.info("Starting website checker agent")
     logger.info("Importing LangChainAdapter and creating adapter")
 
+    # Set up MCP client for Playwright MCP Server - Browser Automation
     server_params = StdioServerParameters(
         command="npx", args=["@playwright/mcp@latest"]
     )
@@ -80,6 +81,7 @@ async def main():
                 [f"- {tool.name}: {tool.description}" for tool in tools]
             )
 
+            # Load tutorial in markdown
             tutorial_path = os.path.join(
                 ROOT_DIR, "..", "data", "tutorials", TUTORIAL_FILE
             )
@@ -88,6 +90,7 @@ async def main():
 
             logger.info(f"Tools created: {tools}")
 
+            # Initialize the prebuilt agent from LangGraph
             logger.info("LLM initialized and create_react_agent.")
             agent = create_react_agent(LLM, tools)
 
@@ -97,6 +100,7 @@ async def main():
             console.print(f"[bold]Available Tools:[/bold]\n{tool_names}")
             console.print(f"[bold]Tutorial File:[/bold] {TUTORIAL_FILE}")
 
+            # Retrieve agent system prompt
             agent_system_prompt = retrieve_agent_prompt(tool_names)
 
             logger.info("Starting agent stream processing.")
@@ -114,6 +118,8 @@ async def main():
                 config={"recursion_limit": RECURSION_LIMIT},
             ):
                 for step, data in chunk.items():
+                    # Log and print each step
+                    logger.info(f"step: {step}")
                     console.print(f"step: {step}")
                     content = data["messages"][-1].content
                     console.print(f"content: {data['messages'][-1].content}")

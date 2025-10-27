@@ -26,7 +26,7 @@ from rich.text import Text
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = os.path.join(ROOT_DIR, '..', 'data', 'output', 'output_formatted_mcp.json')
-TUTORIAL_FILE = "appstudio-devspace-create.md" #"sap-subscribe-booster.md" #"cp-aibus-dox-booster-key.md"
+TUTORIAL_FILE = "ailaunchpad-orchestration.md" #"appstudio-devspace-create.md" #"sap-subscribe-booster.md" #"cp-aibus-dox-booster-key.md"
 
 llm = init_llm('anthropic--claude-4-sonnet')
 
@@ -36,94 +36,6 @@ console = Console()
 # Configuration for text truncation
 MAX_TEXT_LENGTH = 500  # Characters before truncation
 MAX_LINES = 15  # Lines before truncation
-
-def truncate_text(text: str, max_length: int = MAX_TEXT_LENGTH, max_lines: int = MAX_LINES) -> tuple[str, bool]:
-    """Truncate text if it's too long, return (truncated_text, was_truncated)"""
-    lines = text.split('\n')
-    
-    # Check if truncation is needed
-    needs_truncation = len(text) > max_length or len(lines) > max_lines
-    
-    if not needs_truncation:
-        return text, False
-    
-    # Truncate by lines first
-    if len(lines) > max_lines:
-        truncated_lines = lines[:max_lines]
-        truncated_text = '\n'.join(truncated_lines)
-    else:
-        truncated_text = text
-    
-    # Then truncate by character length
-    if len(truncated_text) > max_length:
-        truncated_text = truncated_text[:max_length] + "..."
-    
-    return truncated_text, True
-
-def is_final_summary(content: str) -> bool:
-    """Check if content appears to be a final summary"""
-    summary_indicators = [
-        "summary",
-        "completed",
-        "finished",
-        "final report",
-        "conclusion",
-        "overall",
-        "in total",
-        "to summarize"
-    ]
-    content_lower = content.lower()
-    
-    # Check if it contains summary indicators and appears near the end
-    has_summary_words = any(indicator in content_lower for indicator in summary_indicators)
-    
-    # Additional heuristics for final summary
-    has_completion_marker = "completed" in content_lower
-    is_substantial = len(content) > 200  # Final summaries are usually substantial
-    
-    return has_summary_words and (has_completion_marker or is_substantial)
-
-def show_content(content: str, title: str, border_style: str = "cyan", force_full: bool = False):
-    """Show content with automatic truncation unless it's marked as final summary"""
-    if force_full or is_final_summary(content):
-        # Show full content for final summaries
-        if isinstance(content, str):
-            try:
-                md = Markdown(content)
-                panel = Panel(md, title=f"{title} [dim](full)[/dim]", border_style=border_style)
-            except:
-                panel = Panel(content, title=f"{title} [dim](full)[/dim]", border_style=border_style)
-        else:
-            panel = Panel(str(content), title=f"{title} [dim](full)[/dim]", border_style=border_style)
-        console.print(panel)
-    else:
-        # Automatically truncate other content
-        truncated_content, was_truncated = truncate_text(content)
-        
-        if was_truncated:
-            # Show truncated version with indication
-            try:
-                md = Markdown(truncated_content)
-                panel = Panel(
-                    md, 
-                    title=f"{title} [dim](truncated - {len(content)} chars, {len(content.split(chr(10)))} lines)[/dim]", 
-                    border_style=border_style
-                )
-            except:
-                panel = Panel(
-                    truncated_content, 
-                    title=f"{title} [dim](truncated - {len(content)} chars, {len(content.split(chr(10)))} lines)[/dim]", 
-                    border_style=border_style
-                )
-            console.print(panel)
-        else:
-            # Content is short enough, show directly
-            try:
-                md = Markdown(content)
-                panel = Panel(md, title=title, border_style=border_style)
-            except:
-                panel = Panel(content, title=title, border_style=border_style)
-            console.print(panel)
 
 def print_chunk_formatted(chunk):
     """Pretty print chunk with tool usage and formatted content"""
@@ -276,7 +188,10 @@ async def main():
                 stream_mode="updates",
                 config={"recursion_limit": 50}
             ):
-                print_chunk_formatted(chunk)
+                #print_chunk_formatted(chunk)
+                for step, data in chunk.items():
+                    console.print(f"step: {step}")
+                    console.print(f"content: {data['messages'][-1].content}")
 
 if __name__ == "__main__":
     import asyncio

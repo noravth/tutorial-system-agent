@@ -58,7 +58,7 @@ def retrieve_agent_prompt(tools):
         template_id="268e2f6b-92c8-44a5-ae4b-0c3a6305fa5b",
         input_params={"tool_names": tools},
     )
-    print(response.parsed_prompt)
+    return response.parsed_prompt[0].content
 
 
 async def main():

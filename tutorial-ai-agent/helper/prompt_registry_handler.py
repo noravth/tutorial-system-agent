@@ -75,7 +75,8 @@ def retrieve_prompt():
         template_id="268e2f6b-92c8-44a5-ae4b-0c3a6305fa5b",
         input_params={"tool_names": "test"},
     )
-    print(response.parsed_prompt)
+    print(response.parsed_prompt[0].content)
+    print(type(response.parsed_prompt[0].content))
 
 
 if __name__ == "__main__":

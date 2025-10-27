@@ -75,11 +75,13 @@ async def main():
             # Initialize the connection
             await session.initialize()
 
+            # Create LangChainAdapter and load tools
             logger.info("LangChainAdapter created. Creating tools...")
             tools = await load_mcp_tools(session)
             tool_names = "\n".join(
                 [f"- {tool.name}: {tool.description}" for tool in tools]
             )
+            logger.info(f"Tools created: {tools}")
 
             # Load tutorial in markdown
             tutorial_path = os.path.join(
@@ -87,8 +89,7 @@ async def main():
             )
             with open(tutorial_path, "r") as f:
                 markdown = f.read()
-
-            logger.info(f"Tools created: {tools}")
+            logger.info("Tutorial loaded.")
 
             # Initialize the prebuilt agent from LangGraph
             logger.info("LLM initialized and create_react_agent.")
@@ -97,8 +98,8 @@ async def main():
             console.print(
                 "[bold magenta]🤖 Starting Tutorial Tester Agent[/bold magenta]"
             )
-            console.print(f"[bold]Available Tools:[/bold]\n{tool_names}")
-            console.print(f"[bold]Tutorial File:[/bold] {TUTORIAL_FILE}")
+            console.print(f"[bold green]Available Tools:[/bold green]\n{tool_names}")
+            console.print(f"[bold green]Tutorial File:[/bold green] {TUTORIAL_FILE}")
 
             # Retrieve agent system prompt
             agent_system_prompt = retrieve_agent_prompt(tool_names)

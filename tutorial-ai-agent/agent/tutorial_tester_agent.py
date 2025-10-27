@@ -1,10 +1,7 @@
 import os
 import json
 import logging
-import pprint
-import re
 from datetime import datetime
-from typing import Any
 
 import genaihub_client
 genaihub_client.set_environment_variables()
@@ -17,105 +14,20 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 # Add these imports for better formatting
-import rich
 from rich.console import Console
-from rich.markdown import Markdown
-from rich.panel import Panel
-from rich.syntax import Syntax
-from rich.text import Text
 
+# At the top of your script, after imports:
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_FILE = os.path.join(ROOT_DIR, '..', 'data', 'output', 'output_formatted_mcp.json')
-TUTORIAL_FILE = "ailaunchpad-orchestration.md" #"appstudio-devspace-create.md" #"sap-subscribe-booster.md" #"cp-aibus-dox-booster-key.md"
+OUTPUT_FILE = os.path.join(ROOT_DIR, '..', 'data', 'output', f'output_formatted_mcp_{timestamp}.json')
+TUTORIAL_FILE = "ailaunchpad-orchestration.md"
+RECURSION_LIMIT = 500
 
-llm = init_llm('anthropic--claude-4-sonnet')
+# Assign LLM
+LLM = init_llm('anthropic--claude-4-sonnet')
 
-# Initialize rich console for pretty printing
+# Initialize rich console for better printing
 console = Console()
-
-# Configuration for text truncation
-MAX_TEXT_LENGTH = 500  # Characters before truncation
-MAX_LINES = 15  # Lines before truncation
-
-def print_chunk_formatted(chunk):
-    """Pretty print chunk with tool usage and formatted content"""
-    console.print("\n" + "="*80)
-    console.print(f"[bold blue]CHUNK UPDATE[/bold blue]")
-    console.print("="*80)
-    
-    for node_name, node_data in chunk.items():
-        console.print(f"\n[bold green]Node: {node_name}[/bold green]")
-        
-        if 'messages' in node_data:
-            for i, message in enumerate(node_data['messages']):
-                console.print(f"\n[bold yellow]Message {i+1}:[/bold yellow]")
-                
-                # Print message type and role if available
-                if hasattr(message, 'type'):
-                    console.print(f"[dim]Type: {message.type}[/dim]")
-                
-                # Handle different message types
-                if hasattr(message, 'content'):
-                    content = message.content
-                    
-                    # If content is a list (tool calls/responses)
-                    if isinstance(content, list):
-                        for j, item in enumerate(content):
-                            if isinstance(item, dict):
-                                if item.get('type') == 'tool_use':
-                                    # Tool usage
-                                    tool_input = json.dumps(item.get('input', {}), indent=2)
-                                    tool_content = (
-                                        f"[bold]Tool:[/bold] {item.get('name', 'Unknown')}\n"
-                                        f"[bold]ID:[/bold] {item.get('id', 'N/A')}\n"
-                                        f"[bold]Input:[/bold]\n{tool_input}"
-                                    )
-                                    show_content(tool_content, "🔧 Tool Call", "blue")
-                                    
-                                elif item.get('type') == 'tool_result':
-                                    # Tool result
-                                    result_content = item.get('content', '')
-                                    if isinstance(result_content, list):
-                                        result_content = json.dumps(result_content, indent=2)
-                                    
-                                    tool_result_content = (
-                                        f"[bold]Tool ID:[/bold] {item.get('tool_use_id', 'N/A')}\n"
-                                        f"[bold]Result:[/bold]\n{result_content}"
-                                    )
-                                    show_content(tool_result_content, "✅ Tool Result", "green")
-                                    
-                                elif item.get('type') == 'text':
-                                    # Text content - render as markdown
-                                    text_content = item.get('text', '')
-                                    if text_content.strip():
-                                        show_content(text_content, "💬 Message Content", "cyan")
-                                else:
-                                    # Other content types
-                                    other_content = json.dumps(item, indent=2)
-                                    show_content(other_content, f"📄 Content item {j+1}", "yellow")
-                            else:
-                                console.print(f"[dim]Content item {j+1}: {item}[/dim]")
-                    
-                    # If content is a string
-                    elif isinstance(content, str) and content.strip():
-                        show_content(content, "💬 Message Content", "cyan")
-                    
-                    # If content is other type
-                    else:
-                        content_str = str(content)
-                        show_content(content_str, "📄 Content", "yellow")
-                
-                # Print other message attributes
-                if hasattr(message, 'additional_kwargs') and message.additional_kwargs:
-                    kwargs_str = json.dumps(message.additional_kwargs, indent=2)
-                    show_content(kwargs_str, "⚙️ Additional kwargs", "magenta")
-        
-        # Handle other node data
-        else:
-            node_data_str = json.dumps(node_data, indent=2, default=str)
-            show_content(node_data_str, "📊 Node data", "white")
-    
-    console.print("="*80 + "\n")
 
 def serialize_message(msg):
     if hasattr(msg, 'type') and hasattr(msg, 'content'):
@@ -135,7 +47,6 @@ async def main():
 
     server_params = StdioServerParameters(
         command="npx",
-        # Make sure to update to the full absolute path to your math_server.py file
         args=["@playwright/mcp@latest"]
     )
 
@@ -155,13 +66,13 @@ async def main():
             logger.info(f"Tools created: {tools}")
 
             logger.info("LLM initialized and create_react_agent.")
-            agent = create_react_agent(llm, tools)
+            agent = create_react_agent(LLM, tools)
             
             console.print("[bold magenta]🤖 Starting Tutorial Tester Agent[/bold magenta]")
             console.print(f"[bold]Available Tools:[/bold]\n{tool_names}")
             console.print(f"[bold]Tutorial File:[/bold] {TUTORIAL_FILE}")
-            console.print("[dim]Note: Large content will be automatically truncated except for final summaries.[/dim]\n")
             
+            logger.info("Starting agent stream processing.")
             async for chunk in agent.astream(
                 {"messages": [{"role": "user", "content": f"""You are a tutorial tester agent. Use the scratchpad for your reasoning and tool selection.
                       Read the following tutorial in markdown.
@@ -186,12 +97,22 @@ async def main():
 
                       Tutorial in Markdown: {markdown}"""}]},
                 stream_mode="updates",
-                config={"recursion_limit": 50}
+                config={"recursion_limit": RECURSION_LIMIT}
             ):
-                #print_chunk_formatted(chunk)
                 for step, data in chunk.items():
                     console.print(f"step: {step}")
+                    content = data['messages'][-1].content
                     console.print(f"content: {data['messages'][-1].content}")
+
+                    # Prepare the output dict
+                    output_dict = {
+                        "step": step,
+                        "content": content
+                    }
+                    # Append to file as a JSON line
+                    with open(OUTPUT_FILE, "a") as f:
+                        f.write(json.dumps(output_dict, ensure_ascii=False))
+                        f.write("\n")
 
 if __name__ == "__main__":
     import asyncio

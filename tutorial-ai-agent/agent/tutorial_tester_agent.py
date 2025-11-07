@@ -9,7 +9,6 @@ genaihub_client.set_environment_variables()
 from gen_ai_hub.proxy import get_proxy_client
 from gen_ai_hub.prompt_registry.client import PromptTemplateClient
 
-from gen_ai_hub.proxy.langchain.init_models import init_llm
 from langgraph.prebuilt import create_react_agent
 
 from langchain_mcp_adapters.tools import load_mcp_tools
@@ -28,7 +27,8 @@ OUTPUT_FILE = os.path.join(
 TUTORIAL_FILE = "ailaunchpad-orchestration.md"
 RECURSION_LIMIT = 500
 
-# Assign LLM
+# Assign LLM with Generative AI Hub
+from gen_ai_hub.proxy.langchain.init_models import init_llm
 LLM = init_llm("anthropic--claude-4-sonnet")
 
 # Initialize rich console for better printing
@@ -51,11 +51,12 @@ def save_output(messages):
     return serializable_messages
 
 
+# Retrieve agent prompt from prompt registry on SAP AI Core
 def retrieve_agent_prompt(tools):
     proxy_client = get_proxy_client(proxy_version="gen-ai-hub")
     prompt_registry_client = PromptTemplateClient(proxy_client=proxy_client)
     response = prompt_registry_client.fill_prompt_template_by_id(
-        template_id="268e2f6b-92c8-44a5-ae4b-0c3a6305fa5b",
+        template_id="c0b92dd9-cfd2-49d8-bfe0-7c65a9c2f9eb",
         input_params={"tool_names": tools},
     )
     return response.parsed_prompt[0].content
@@ -103,6 +104,8 @@ async def main():
 
             # Retrieve agent system prompt
             agent_system_prompt = retrieve_agent_prompt(tool_names)
+
+            input("Should I start the tutorial tester agent?")
 
             logger.info("Starting agent stream processing.")
             async for chunk in agent.astream(

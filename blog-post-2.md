@@ -1,14 +1,8 @@
-Here is a blog post written in the requested tone, breaking down the code and the concepts behind it.
+# I Built a "Tutorial Tester" Agent and Gave it Internet Access with MCP, LangGraph, and Generative AI Hub.
 
----
+My colleague asked me: what if we could have an AI agent read our markdown tutorials and actually **execute** the steps in a real browser to verify them?
 
-# I Built a "Tutorial Tester" Agent with MCP, LangGraph, and SAP Generative AI Hub. Here’s How.
-
-We’ve all been there: You find a great tutorial, start following the steps, and then—bam. The UI has changed, the button isn't where it used to be, and the instructions are stale.
-
-Maintaining documentation is one of those necessary evils in software development. But what if we could have an AI agent read our markdown tutorials and actually **execute** the steps in a real browser to verify them?
-
-I decided to build exactly that.
+Challenge accepted! I decided to build exactly that.
 
 In this post, I’m going to walk you through the Python code for a "Tutorial Tester Agent." I’m combining the governance of **SAP Generative AI Hub**, the orchestration power of **LangGraph**, and the exciting new **Model Context Protocol (MCP)** to give my agent eyes and hands on the web.
 
@@ -155,4 +149,3 @@ I built it this way for three specific reasons:
 
 This script is just the beginning. Imagine an agent that runs every night, checking your internal documentation or onboarding guides, ensuring they are always up to date. By combining the governance of SAP with the flexibility of MCP, we can build agents that are not just chatty, but actually *capable*.
 
-**Would you like me to help you set up the Prompt Registry in SAP AI Core to work with this script?**
